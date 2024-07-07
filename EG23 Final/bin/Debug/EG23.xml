@@ -1,0 +1,468 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EG23</name>
+    </assembly>
+    <members>
+        <member name="F:EG23.Component1.components">
+            <summary>
+            Variable nécessaire au concepteur.
+            </summary>
+        </member>
+        <member name="M:EG23.Component1.Dispose(System.Boolean)">
+            <summary> 
+            Nettoyage des ressources utilisées.
+            </summary>
+            <param name="disposing">true si les ressources managées doivent être supprimées ; sinon, false.</param>
+        </member>
+        <member name="M:EG23.Component1.InitializeComponent">
+            <summary>
+            Méthode requise pour la prise en charge du concepteur - ne modifiez pas
+            le contenu de cette méthode avec l'éditeur de code.
+            </summary>
+        </member>
+        <member name="T:EG23.Form1">
+            <summary>
+            Formulaire pour récupérer les informations des joueurs.
+            </summary>
+        </member>
+        <member name="M:EG23.Form1.#ctor(EG23.page1)">
+            <summary>
+            Initialise une nouvelle instance de <see cref="T:EG23.Form1"/>.
+            </summary>
+            <param name="page">Instance de la page principale.</param>
+        </member>
+        <member name="M:EG23.Form1.gunaPanel2_Paint(System.Object,System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Gère l'événement Paint du panneau gunaPanel2.
+            </summary>
+        </member>
+        <member name="M:EG23.Form1.gunaButton1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Gère l'événement Click du bouton pour valider les informations des joueurs et passer au formulaire suivant.
+            </summary>
+        </member>
+        <member name="M:EG23.Form1.gunaButton2_Click(System.Object,System.EventArgs)">
+            <summary>
+            Gère l'événement Click du bouton pour revenir à la page principale.
+            </summary>
+        </member>
+        <member name="F:EG23.Form1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:EG23.Form1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:EG23.Form1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:EG23.page3.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:EG23.page3.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:EG23.page3.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:EG23.Form2">
+            <summary>
+            Formulaire pour gérer les actions et l'état d'un joueur et permettre des opérations de drag-and-drop sur des PictureBox.
+            </summary>
+        </member>
+        <member name="M:EG23.Form2.#ctor(EG23.page3,EG23.Joueur)">
+            <summary>
+            Initialise une nouvelle instance de <see cref="T:EG23.Form2"/>.
+            </summary>
+            <param name="page">Instance du formulaire page3.</param>
+            <param name="j">Instance du joueur à gérer.</param>
+        </member>
+        <member name="M:EG23.Form2.panel1_Paint(System.Object,System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Gère l'événement Paint de panel1.
+            </summary>
+        </member>
+        <member name="M:EG23.Form2.panel4_Paint(System.Object,System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Gère l'événement Paint de panel4.
+            </summary>
+        </member>
+        <member name="M:EG23.Form2.Form2_Load(System.Object,System.EventArgs)">
+            <summary>
+            Gère l'événement Load du formulaire.
+            Initialise les propriétés de drag-and-drop pour plusieurs PictureBox.
+            </summary>
+        </member>
+        <member name="M:EG23.Form2.button60_Click(System.Object,System.EventArgs)">
+            <summary>
+            Gère l'événement Click de button60.
+            Ouvre le formulaire Form3 et ferme le formulaire actuel.
+            </summary>
+        </member>
+        <member name="M:EG23.Form2.pictureBox42_Click(System.Object,System.EventArgs)">
+            <summary>
+            Gère l'événement Click de pictureBox42.
+            </summary>
+        </member>
+        <member name="M:EG23.Form2.textBox1_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Gère l'événement TextChanged de textBox1.
+            </summary>
+        </member>
+        <member name="M:EG23.Form2.pictureBox_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Gère l'événement MouseDown des PictureBox.
+            Initialise l'opération de drag-and-drop pour l'image de la PictureBox source.
+            </summary>
+        </member>
+        <member name="M:EG23.Form2.pictureBox_dragEnter(System.Object,System.Windows.Forms.DragEventArgs)">
+            <summary>
+            Gère l'événement DragEnter des PictureBox.
+            Définit l'effet de drag-and-drop sur Copy si les données sont une image.
+            </summary>
+        </member>
+        <member name="M:EG23.Form2.pictureBox_DragDrop(System.Object,System.Windows.Forms.DragEventArgs)">
+            <summary>
+            Gère l'événement DragDrop des PictureBox.
+            Dépose l'image dans la PictureBox cible et marque l'opération comme réussie.
+            </summary>
+        </member>
+        <member name="M:EG23.Form2.pictureBox_DragLeave(System.Object,System.EventArgs)">
+            <summary>
+            Gère l'événement DragLeave des PictureBox.
+            Restaurer l'image d'origine si l'opération de drag-and-drop échoue.
+            </summary>
+        </member>
+        <member name="M:EG23.Form2.pictureBox_QueryContinueDrag(System.Object,System.Windows.Forms.QueryContinueDragEventArgs)">
+            <summary>
+            Gère l'événement QueryContinueDrag des PictureBox.
+            Restaurer l'image d'origine si l'opération de drag-and-drop est annulée.
+            </summary>
+        </member>
+        <member name="M:EG23.Form2.button1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Gère l'événement Click de button1.
+            Affiche le formulaire page3 et cache le formulaire actuel.
+            </summary>
+        </member>
+        <member name="F:EG23.Form2.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:EG23.Form2.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:EG23.Form2.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:EG23.Form3">
+            <summary>
+            Formulaire pour gérer les actions et l'état d'un joueur avec des animations et des transitions entre les formulaires.
+            </summary>
+        </member>
+        <member name="M:EG23.Form3.#ctor(EG23.Joueur)">
+            <summary>
+            Initialise une nouvelle instance de <see cref="T:EG23.Form3"/>.
+            </summary>
+            <param name="J">Instance du joueur à gérer.</param>
+        </member>
+        <member name="M:EG23.Form3.panel1_Paint(System.Object,System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Gère l'événement Paint de panel1.
+            </summary>
+        </member>
+        <member name="M:EG23.Form3.timer1_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Gère l'événement Tick de timer1.
+            Augmente la largeur de panel3 et met à jour le pourcentage dans le label.
+            </summary>
+        </member>
+        <member name="M:EG23.Form3.timer2_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Gère l'événement Tick de timer2.
+            Déplace pictureBox1 vers le haut jusqu'à une certaine position, puis démarre timer3.
+            </summary>
+        </member>
+        <member name="M:EG23.Form3.timer3_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Gère l'événement Tick de timer3.
+            Déplace pictureBox1 vers le bas jusqu'à une certaine position, puis redémarre timer2.
+            </summary>
+        </member>
+        <member name="F:EG23.Form3.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:EG23.Form3.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:EG23.Form3.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:EG23.Form4">
+            <summary>
+            Formulaire pour gérer les actions et l'état d'un joueur avec une barre de progression et des messages aléatoires.
+            </summary>
+        </member>
+        <member name="M:EG23.Form4.#ctor(EG23.Joueur)">
+            <summary>
+            Initialise une nouvelle instance de <see cref="T:EG23.Form4"/>.
+            </summary>
+            <param name="j">Instance du joueur à gérer.</param>
+        </member>
+        <member name="M:EG23.Form4.InitializeTimer">
+            <summary>
+            Initialise et démarre le minuteur de progression.
+            </summary>
+        </member>
+        <member name="M:EG23.Form4.OnTimerTick(System.Object,System.EventArgs)">
+            <summary>
+            Gestionnaire d'événements pour le tick du minuteur de progression.
+            Met à jour la barre de progression et affiche des messages aléatoires.
+            </summary>
+        </member>
+        <member name="M:EG23.Form4.button1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Gestionnaire d'événements pour le bouton Quitter.
+            Affiche une boîte de dialogue de confirmation avant de quitter le jeu.
+            </summary>
+        </member>
+        <member name="M:EG23.Form4.button60_Click(System.Object,System.EventArgs)">
+            <summary>
+            Gestionnaire d'événements pour le bouton Pause/Reprendre.
+            Met en pause ou reprend le minuteur de progression.
+            </summary>
+        </member>
+        <member name="M:EG23.Form4.button2_Click(System.Object,System.EventArgs)">
+            <summary>
+            Gestionnaire d'événements pour le bouton2. (Non utilisé)
+            </summary>
+        </member>
+        <member name="F:EG23.Form4.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:EG23.Form4.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:EG23.Form4.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:EG23.Form5">
+            <summary>
+            Formulaire pour gérer les actions et l'état d'un joueur avec la fonctionnalité de glisser-déposer.
+            </summary>
+        </member>
+        <member name="M:EG23.Form5.#ctor(EG23.Joueur)">
+            <summary>
+            Initialise une nouvelle instance de <see cref="T:EG23.Form5"/>.
+            </summary>
+            <param name="j">Instance du joueur à gérer.</param>
+        </member>
+        <member name="M:EG23.Form5.panel12_Paint(System.Object,System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Gestionnaire d'événements pour la peinture du panel12.
+            </summary>
+        </member>
+        <member name="M:EG23.Form5.Form5_Load(System.Object,System.EventArgs)">
+            <summary>
+            Gestionnaire d'événements pour le chargement du formulaire.
+            Active la fonctionnalité de glisser-déposer pour les PictureBox spécifiés.
+            </summary>
+        </member>
+        <member name="M:EG23.Form5.pictureBox_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Gestionnaire d'événements pour le début du glisser-déposer des images.
+            </summary>
+        </member>
+        <member name="M:EG23.Form5.pictureBox_MouseDown1(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Gestionnaire d'événements pour le début du glisser-déposer des images avec vérification de l'état.
+            </summary>
+        </member>
+        <member name="M:EG23.Form5.pictureBox_dragEnter(System.Object,System.Windows.Forms.DragEventArgs)">
+            <summary>
+            Gestionnaire d'événements pour l'entrée de l'objet de glisser-déposer dans la zone cible.
+            </summary>
+        </member>
+        <member name="M:EG23.Form5.pictureBox_DragDrop(System.Object,System.Windows.Forms.DragEventArgs)">
+            <summary>
+            Gestionnaire d'événements pour le dépôt de l'objet de glisser-déposer dans la zone cible.
+            </summary>
+        </member>
+        <member name="M:EG23.Form5.pictureBox_DragLeave(System.Object,System.EventArgs)">
+            <summary>
+            Gestionnaire d'événements pour quitter la zone de dépôt lors du glisser-déposer.
+            </summary>
+        </member>
+        <member name="M:EG23.Form5.pictureBox_QueryContinueDrag(System.Object,System.Windows.Forms.QueryContinueDragEventArgs)">
+            <summary>
+            Gestionnaire d'événements pour continuer ou annuler le glisser-déposer.
+            </summary>
+        </member>
+        <member name="M:EG23.Form5.button60_Click(System.Object,System.EventArgs)">
+            <summary>
+            Gestionnaire d'événements pour le bouton Recommencer.
+            Affiche le formulaire Form4 et cache le formulaire actuel.
+            </summary>
+        </member>
+        <member name="F:EG23.Form5.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:EG23.Form5.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:EG23.Form5.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:EG23.page1">
+            <summary>
+            Représente la fenêtre principale d'entrée du programme.
+            Cette fenêtre contient les boutons pour démarrer un nouveau jeu, charger un jeu existant, etc.
+            </summary>
+        </member>
+        <member name="M:EG23.page1.#ctor">
+            <summary>
+            Initialise une nouvelle instance de <see cref="T:EG23.page1"/>.
+            </summary>
+        </member>
+        <member name="M:EG23.page1.button2_Click(System.Object,System.EventArgs)">
+            <summary>
+            Gère l'événement Click du bouton pour afficher la description du jeu.
+            </summary>
+        </member>
+        <member name="M:EG23.page1.button4_Click(System.Object,System.EventArgs)">
+            <summary>
+            Gère l'événement Click du bouton pour fermer le jeu.
+            </summary>
+        </member>
+        <member name="M:EG23.page1.gunaButton3_Click(System.Object,System.EventArgs)">
+            <summary>
+            Gère l'événement Click du bouton pour afficher une description détaillée du jeu.
+            </summary>
+        </member>
+        <member name="M:EG23.page1.gunaButton4_Click(System.Object,System.EventArgs)">
+            <summary>
+            Gère l'événement Click du bouton pour confirmer et fermer le jeu.
+            </summary>
+        </member>
+        <member name="M:EG23.page1.panel2_Paint(System.Object,System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Gère l'événement Paint du panneau panel2.
+            </summary>
+        </member>
+        <member name="M:EG23.page1.button1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Gère l'événement Click du bouton pour afficher une image de fond.
+            </summary>
+        </member>
+        <member name="M:EG23.page1.gunaButton2_Click(System.Object,System.EventArgs)">
+            <summary>
+            Gère l'événement Click du bouton pour sélectionner une partie sauvegardée.
+            </summary>
+        </member>
+        <member name="M:EG23.page1.b1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Gère l'événement Click du bouton pour charger la première partie sauvegardée.
+            </summary>
+        </member>
+        <member name="M:EG23.page1.b2_Click(System.Object,System.EventArgs)">
+            <summary>
+            Gère l'événement Click du bouton pour charger la deuxième partie sauvegardée.
+            </summary>
+        </member>
+        <member name="M:EG23.page1.gunaButton1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Gère l'événement Click du bouton pour démarrer un nouveau formulaire de jeu.
+            </summary>
+        </member>
+        <member name="F:EG23.page1.components">
+            <summary>
+            Variable nécessaire au concepteur.
+            </summary>
+        </member>
+        <member name="M:EG23.page1.Dispose(System.Boolean)">
+            <summary>
+            Nettoyage des ressources utilisées.
+            </summary>
+            <param name="disposing">true si les ressources managées doivent être supprimées ; sinon, false.</param>
+        </member>
+        <member name="M:EG23.page1.InitializeComponent">
+            <summary>
+            Méthode requise pour la prise en charge du concepteur - ne modifiez pas
+            le contenu de cette méthode avec l'éditeur de code.
+            </summary>
+        </member>
+        <member name="M:EG23.Program.Main">
+            <summary>
+            Point d'entrée principal de l'application.
+            </summary>
+        </member>
+        <member name="T:EG23.Properties.Resources">
+            <summary>
+              Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+            </summary>
+        </member>
+        <member name="P:EG23.Properties.Resources.ResourceManager">
+            <summary>
+              Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+            </summary>
+        </member>
+        <member name="P:EG23.Properties.Resources.Culture">
+            <summary>
+              Remplace la propriété CurrentUICulture du thread actuel pour toutes
+              les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+            </summary>
+        </member>
+        <member name="P:EG23.Properties.Resources.ac">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>
